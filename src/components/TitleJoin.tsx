@@ -4,7 +4,7 @@ const Container = styled.div`
 display: flex;
 justify-content: center;
 align-items: flex-start;
-height: 100vh;
+margin-right:15rem;
 
 `
 const Title = styled.h1`

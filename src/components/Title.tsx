@@ -2,15 +2,20 @@ import styled from "styled-components";
 
 
 const Container = styled.div`
-  display: flex;
-  justify-content: center;
+ 
+  justify-content: space-evenly;
   align-items: flex-start;
   
+  @media (min-width:900px){
+    display:flex;
+    text-align:center;
+  }
 `;
 
 const H1 = styled.h1`
   color: #ffff;
   font-size:50px;
+
 `;
 
 export function Title() {

@@ -6,19 +6,26 @@ const FormContainer = styled.div`
   flex-direction: column;
   max-width: 300px;
   margin: 0 auto;
-  background-color:rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 1rem;
-  margin-top: -2rem;
-  
+  color: #e5eafa;
+  margin-bottom: 2rem;
+ 
+  @media(max-width:900px){
+    display:flex;
+    flex-direction: row;
+    width:100%
+  }
+ 
 `;
 
 const FormGroup = styled.div`
   margin-bottom: 1rem;
+  
 `;
 
 const Label = styled.label`
-  
-  color:#e5eafa;
+  color: #e5eafa;
 `;
 
 const Input = styled.input`
@@ -27,7 +34,8 @@ const Input = styled.input`
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
   padding: 0.5rem;
   width:calc(100% - 1rem);
-  background-color:rgba(0, 0, 0, 0.8);
+  background-color:rgba(0, 0, 0, 0.8)
+  color: #e5eafa;;
 `;
 
 const Button = styled.button`
@@ -38,7 +46,7 @@ const Button = styled.button`
   border-radius: 8px;
   cursor: pointer;
   width: 100%;
-  margin-top:1rem;
+  margin-top: 1rem;
 `;
 
 export function FormJoin() {
@@ -46,9 +54,9 @@ export function FormJoin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e:any) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
-    // Aquí puedes realizar la lógica para enviar los datos del formulario
+    // Aquí haria mi logica para el envio del formulario
     console.log("Nombre:", name);
     console.log("Email:", email);
     console.log("Contraseña:", password);
@@ -59,29 +67,26 @@ export function FormJoin() {
       <form onSubmit={handleSubmit}>
         <FormGroup>
           <Label>Name:</Label>
-          <p>{name}</p>
           <Input
             type="text"
             value={name}
-            onChange={(e:any) => setName(e.target.value)}
+            onChange={(e: any) => setName(e.target.value)}
           />
         </FormGroup>
         <FormGroup>
           <Label>Email:</Label>
-          <p>{email}</p>
           <Input
             type="email"
             value={email}
-            onChange={(e:any) => setEmail(e.target.value)}
+            onChange={(e: any) => setEmail(e.target.value)}
           />
         </FormGroup>
         <FormGroup>
           <Label>Password:</Label>
-          <p>{password}</p>
           <Input
             type="password"
             value={password}
-            onChange={(e:any) => setPassword(e.target.value)}
+            onChange={(e: any) => setPassword(e.target.value)}
           />
         </FormGroup>
         <Button type="submit">Join Now</Button>
@@ -89,6 +94,3 @@ export function FormJoin() {
     </FormContainer>
   );
 }
-
-
-

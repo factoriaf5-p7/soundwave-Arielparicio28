@@ -14,6 +14,15 @@ border-radius: 50%;
 background-color: rgba(188, 58, 128, 0.1)
 ;
 
+@media (min-width: 900px) {
+    display:flex;
+    flex-direction: row;
+    margin-left: 20rem;
+    width: 250px;
+    height: 250px;
+  }
+
+
 `
 export function CirclePink() {
   return (

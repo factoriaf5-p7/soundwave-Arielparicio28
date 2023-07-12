@@ -9,8 +9,8 @@ const Container = styled.menu`
   
 
 
-@media (max-width: 375px) {
-  flex-direction: column;
+@media (min-width: 900px) {
+  flex-direction: rows;
   justify-content:center;
   height: auto;
   padding: 20px;

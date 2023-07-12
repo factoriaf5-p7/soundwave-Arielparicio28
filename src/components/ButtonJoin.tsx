@@ -17,6 +17,7 @@ cursor: pointer;
 &:hover{
    color: #2180d8;
 }
+
 `
 
 interface ButtonJoinProps {

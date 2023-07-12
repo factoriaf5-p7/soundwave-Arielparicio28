@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  display: flex;
   justify-content: center;
   align-items: flex-start;
  
@@ -15,10 +14,10 @@ export function Description() {
   return (
     <Container>
       <H4>
-        <h4>
+        
           Stream over 20 thousand songs <br />
           with one click
-        </h4>
+        
       </H4>
     </Container>
   );

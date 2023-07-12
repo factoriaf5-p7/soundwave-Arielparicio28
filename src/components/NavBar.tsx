@@ -4,32 +4,28 @@ import { Link } from 'react-router-dom';
 const Container = styled.nav`
 display: flex;
 flex-direction: row;
-justify-content: center;
+justify-content: space-evenly;
 align-items: center;
-height: 100px;
+margin: 10px;
 
 
-@media (max-width: 375px) {
-  flex-direction: column;
-  justify-content:center;
-  height: auto;
-  padding: 20px;
-  text-align: center;
+& div { 
+  display:flex;
+  flex-direction: rows;
+  align-items:center;
 }
+
 `;
 
 const Logo = styled.img`
 
-  height: auto; 
-  max-width: 100%;
 `;
 
 const NavList = styled.ul`
-  list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  list-style: none;
+ 
   margin:0;
   padding:0;
 `;
@@ -41,6 +37,10 @@ const NavItem = styled.li`
   cursor: pointer;
   font-size: 15px;
 
+  & a {
+    text-decoration:none;
+  }
+
   &:hover {
     color: #202027;
   }
@@ -49,18 +49,21 @@ const NavSound = styled.li`
   margin: 0 10px;
   font-weight: bold;
   color: #ffff;
-  font-size: 30px;
+  font-size: 20px;
 `;
+
 
 export function NavBar() {
   return (
     <>
       <Container>
+        <div>
         <Link to={"/"}>
         <Logo src="logo.png" alt="Logo de sonido" />
         </Link>
+        <NavSound>SoundWave</NavSound>
+        </div>
         <NavList>
-          <NavSound>SoundWave</NavSound>
           <NavItem>
             <Link to="/discover" style={{ color: "#e5eafa" }}>Discover</Link>
           </NavItem>

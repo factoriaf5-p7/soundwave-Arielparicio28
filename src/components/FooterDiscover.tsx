@@ -21,7 +21,7 @@ border-radius: 5px;
 `;
 
 const SocialIcon = styled.img`
-  height: 16px;
+ height: 15px;
 `;
 
 export function FooterDiscover() {

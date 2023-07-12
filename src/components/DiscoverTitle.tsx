@@ -6,7 +6,14 @@ const Container = styled.div`
   justify-content: center;
   align-items: flex-start;
   text-align:center;
-  
+
+  @media (min-width: 900px) {
+    flex-direction: rows;
+    justify-content:center;
+    padding: 20px;
+    text-align: center;
+  }
+
 `;
 
 const H1 = styled.h2`
