@@ -12,9 +12,11 @@ const Container = styled.div`
   flex-direction: column;
   gap: 10px;
   padding: 0 20px;
+ 
 `;
 const Home = styled.div`
   display: flex;
+ 
 `;
 
 export function HomePage() {
@@ -26,7 +28,7 @@ export function HomePage() {
       <Container>
         <Title />
         <Description />
-        <ButtonJoin text={"Join Now"} />
+        <ButtonJoin  text={"Join Now"} />
       </Container>
       <CircleFooter />
     </Home>

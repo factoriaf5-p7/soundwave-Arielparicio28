@@ -6,10 +6,11 @@ const FormContainer = styled.div`
   flex-direction: column;
   max-width: 300px;
   margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(24, 22, 22, 0.8);
   padding: 1rem;
   color: #e5eafa;
   margin-bottom: 2rem;
+  border-radius: 7%;
  
   @media(max-width:900px){
     display:flex;
@@ -22,21 +23,24 @@ const FormContainer = styled.div`
 const FormGroup = styled.div`
   margin-bottom: 1rem;
   
+  
 `;
 
 const Label = styled.label`
   color: #e5eafa;
+  
 `;
 
 const Input = styled.input`
   border-radius: 4px;
-  border: 2px solid rgba(0, 123, 255, 0.5);
+  border: 2px solid rgba(146, 194, 247, 0.5);
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
   padding: 0.5rem;
   width:calc(100% - 1rem);
-  background-color:rgba(0, 0, 0, 0.8)
-  color: #e5eafa;;
-`;
+  color: #e5eafa ;
+  background-color:rgba(0, 0, 0, 0.8);
+ 
+`
 
 const Button = styled.button`
   padding: 0.5rem 1rem;

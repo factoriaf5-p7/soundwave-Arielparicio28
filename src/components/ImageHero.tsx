@@ -4,6 +4,7 @@ const ImageContainer = styled.div`
 display: none;
 background-position: 20px,50px;
 
+
 @media (min-width: 900px) {
   display: block;
 }
