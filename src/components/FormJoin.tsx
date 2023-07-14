@@ -60,6 +60,7 @@ export function FormJoin() {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
+    
     // Aquí haria mi logica para el envio del formulario
     console.log("Nombre:", name);
     console.log("Email:", email);
